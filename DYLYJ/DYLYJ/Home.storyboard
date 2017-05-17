@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Hfg-PC-jb2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="hhs-2b-ZGM">
+            <objects>
+                <navigationController id="Hfg-PC-jb2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal" selectedImage="btn_home_selected" id="BDT-Uv-6z6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dRD-Mp-n4X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nmd-S1-ghZ" kind="relationship" relationship="rootViewController" id="hXS-Lc-Rs6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="023-WF-6BT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="125"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="CLJ-an-yd2">
+            <objects>
+                <viewController id="nmd-S1-ghZ" customClass="HomeViewController" customModule="DYLYJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cRh-L0-M0T"/>
+                        <viewControllerLayoutGuide type="bottom" id="eTo-td-8ps"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2M6-aO-5ct">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4yE-J1-g2U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7F-BX-cHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_home_normal" width="24" height="24"/>
+        <image name="btn_home_selected" width="24" height="24"/>
+    </resources>
+</document>
